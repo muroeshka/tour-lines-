@@ -1,0 +1,345 @@
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+    font-weight: 200;
+    font-family: "Roboto";
+    background: url("https://img.freepik.com/free-photo/wide-shot-of-a-white-canoe-on-the-body-of-water-near-a-green-island-under-a-clear-blue-sky_181624-3421.jpg?w=740&t=st=1697507361~exp=1697507961~hmac=31e9d8d781afac4f58e502c633757a09249779265ae5a7995e1c98dca850b5dd");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.__conteiner {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+:root {
+    --text-color: #f76c15;
+    --black: #1c1c1e;
+}
+
+/* a:hover {
+    text-decoration: underline;
+} */
+h5, h6, h1, h2, h3, h4 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: block;
+    font-size: 14px;
+}
+
+/* ----------------------------- */
+.header__top {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header__bottom {
+    padding: 15px 0;
+    /* border-bottom: .05px solid black; */
+    backdrop-filter: blur(5px);
+    border-radius: 0 0 20px 20px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    margin: 0 100px 0 20px;
+    flex: 1 1;
+}
+
+/* .nav__logo-img {
+    background: url("../img/logo.webp") left no-repeat;
+    height: 30px;
+    width: 30px;
+} */
+.nav__logo__title {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.nav__logo__title span {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav__item {
+    margin: 0 30px 0 0;
+}
+
+.nav__link {
+    color: var(--black);
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+}
+
+.nav__link:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 1px;
+    background-color: #dff;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+.nav__link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+.nav__link:hover {
+    color: var(--text-color);
+    color: white;
+}
+
+.nav__user-btn {
+    padding: 15px 25px;
+    color: var(--black);
+    color: #fff;
+    margin: 0 0 0 50px;
+    font-size: 18px;
+}
+
+/* ------------------------ */
+.hero {
+    padding: 100px 0 100px 50px;
+    display: flex;
+    align-items: start;
+}
+
+.hero__conteiner {}
+
+.__conteiner {}
+
+.hero__title {
+    color: white;
+    font-family: "Marck Script";
+    font-weight: 400;
+    font-size: 64px;
+    max-width: 1100px;
+}
+
+/* ------------------ */
+.topoftours {
+    padding: 50px 0 50px 50px;
+    min-height: 100px;
+    background-color: rgba(249, 246, 250, 0.775);
+    margin: -50px 0 50px 0;
+    border-radius: 0 0 20px 20px;
+}
+
+.topoftours__content {
+    display: flex;
+}
+
+.topoftours__title {
+    font-size: 26px;
+    color: #00809b;
+    margin: 0 20px 0 0;
+}
+
+.topoftours__names {
+    max-width: 565px;
+    margin: 20px 0 0 0;
+    color: #00809b;
+    font-weight: 700;
+}
+
+/* -------------- */
+.page__tourse {
+    background-color: #f0faf1;
+    /* width: 100%;
+    height: 600px; */
+    padding: 20px 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.tourse-page__row {
+    background-color: #f0faf1;
+
+    width: 100%;
+    /* height: 650px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tourse-page__column {
+    width: 21%;
+    /* min-height: 40%; */
+    border-radius: 15px;
+    margin: 15px 20px;
+
+}
+
+.column__top {
+    background-color: #00809b;
+    border-radius: 15px;
+    padding: 5px 15px;
+    min-height: 150px;
+    position: relative;
+}
+
+.column__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 19px 15px;
+    z-index: -1px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.column__meta {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.meta__title {
+    margin: 0 0 5px 0;
+    max-width: 150px;
+    font-weight: 500;
+}
+
+.meta__price {
+    font-weight: 200;
+}
+
+.meta__stars {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.column__bottom {
+    background-color: white;
+    padding: 5px 15px;
+    margin: -10px 0 0 0;
+    z-index: -1;
+    border-radius: 0 0 10px 10px;
+}
+
+.bottom {}
+
+.bottom__title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bottom__meta {
+    display: flex;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.bottom__time {}
+
+.bottom__many {}
+
+/* .tours_div div img{
+    width: 100%;
+    height: 80%;
+    border-radius: 15px 15px 0 0;
+} */
+
+/* -------------------- */
+
+.page__booking {
+    padding: 50px 0;
+    color: var(--white);
+    color: white;
+    background: url("https://img.freepik.com/free-photo/scenics-view-of-idyllic-sea-against-blue-sky_23-2148148620.jpg?w=740&t=st=1697532844~exp=1697533444~hmac=e17a142614f53f057a656ee8c62782e656bf1b26fc72b1566e110363bd21857a");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    border-radius: 0 0 20px 20px;
+
+}
+
+.booking-page__conteiner {}
+
+.booking-page__title {
+    font-weight: 700;
+    margin: 0 0 20px;
+    font-size: 24px;
+
+}
+
+.booking-page__subtitle {
+    letter-spacing: .5px;
+}
+
+.booking-page__user-btn {
+    display: inline-block;
+    padding: 20px 40px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: #dff;
+    margin: 0 auto;
+}
+@media(max-width:790px) {
+    .nav__logo {
+        margin: 0 50px 0 20px;
+    }
+    .nav__item:not(:last-child) {
+        margin: 0 20px 0 0;
+    }
+    .hero {
+        padding: 100px 0 100px 0;
+}
+}
+@media(max-width:704px) {
+    .nav__logo {
+        margin: 0 50px 0 10px;
+    }
+    .nav__item {
+        margin: 0 0 0 10px;
+    }
+    .nav__user-btn {
+        margin: 0 0 0 30px;
+    }
+    .nav__list {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+    }
+    .nav__logo__title {
+    font-size: 25px;
+
+    }
+}
